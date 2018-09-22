@@ -1,0 +1,61 @@
+<header>
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo img-fluid" href="#">
+        <img src="../../assets/Logo.png" alt="picture not found">
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" [routerLinkActive]="['active']">
+            <a [routerLink]="['/home']" class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+            <a [routerLink]="['/about']" class="nav-link waves-light" mdbRippleRadius>About</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a [routerLink]="['/projects']" class="nav-link waves-light" mdbRippleRadius>Projects</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+             <a [routerLink]="['/resume']" class="nav-link waves-light" mdbRippleRadius>Resume</a>
+         </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a [routerLink]="['/contact']" class="nav-link waves-light" mdbRippleRadius>Contact</a>
+        </li>
+     </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro-2">
+    <!--Carousel Wrapper-->
+    <mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
+      <!--First slide-->
+      <mdb-carousel-item>
+          <div class="view w-100">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+              <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+          </div>
+          <div class="carousel-caption">
+              <h3 class="h3-responsive">Light mask</h3>
+              <p>First text</p>
+          </div>
+      </mdb-carousel-item>
+      <!--/First slide-->
+      <!--Second slide-->
+      <mdb-carousel-item>
+          <div class="view w-100">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+          </div>
+          <div class="carousel-caption">
+              <h3 class="h3-responsive">Strong mask</h3>
+              <p>Secondary text</p>
+          </div>
+      </mdb-carousel-item>
+      <!--/Second slide-->
+    </mdb-carousel>
+<!--/.Carousel Wrapper-->
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->

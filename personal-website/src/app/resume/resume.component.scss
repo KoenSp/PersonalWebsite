@@ -1,0 +1,19 @@
+.resume{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+    font-size: 1.2rem; 
+    margin-left: 25%;
+}
+.list{
+    display: flex; 
+    flex-wrap: wrap; 
+}
+.listL{
+    width: 30%; 
+    font-size: 1.4rem; 
+    list-style: none; 
+}
+.listR ul{
+    list-style: none; 
+}
